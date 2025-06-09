@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import Link from 'next/link';
 
 export default function Footer() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -60,13 +61,13 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-2">Links</h3>
             <ul className="space-y-2 md:space-y-3">
-              <li><a href="/about" className="target-link">About</a></li>
-              <li><a href="/team" className="target-link">Team</a></li>
-              <li><a href="/activities" className="target-link">Activities</a></li>
-              <li><a href="/projects" className="target-link">Projects</a></li>
-              <li><a href="/publications" className="target-link">Publications</a></li>
-              <li><a href="/responsible-computing" className="target-link">Responsible Computing</a></li>
-              <li><a href="/robots" className="target-link">Robots</a></li>
+              <li><Link href="/about" className="target-link">About</Link></li>
+              <li><Link href="/team" className="target-link">Team</Link></li>
+              <li><Link href="/activities" className="target-link">Activities</Link></li>
+              <li><Link href="/projects" className="target-link">Projects</Link></li>
+              <li><Link href="/publications" className="target-link">Publications</Link></li>
+              <li><Link href="/responsible-computing" className="target-link">Responsible Computing</Link></li>
+              <li><Link href="/robots" className="target-link">Robots</Link></li>
             </ul>
           </div>
 

@@ -25,7 +25,7 @@ const NewsSection: React.FC = () => {
                 </p>
                 <div className="w-full mb-4 relative aspect-[3/2]">
                   <Image
-                    src={item.coverImage.replace("./../static", "/img")}
+                    src={item.coverImage.replace("/static", "/img")}
                     alt="News Image"
                     fill
                     className="object-contain rounded-md"
