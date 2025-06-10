@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { people, Person } from "@/constants/people";
+import Banner from "@/components/Banner";
 
 function slugify(name: string) {
   return name
@@ -26,7 +27,11 @@ export default function TeamPage() {
     slugify(`${person.first_name} ${person.last_name}`);
 
   return (
-    <main className="container mx-auto font-lato px-4 py-8">
+    
+    <main >
+    <Banner title="Our Team" />
+      {/* Team Introduction */}
+      <div className="container mx-auto font-lato px-4 py-8"> 
       {/* Principal Investigator */}
       {principalInvestigator && (
         <>
@@ -196,11 +201,14 @@ export default function TeamPage() {
               />
             </div>
           </div>
+          
           {i !== postgraduates.length - 1 && (
             <div className="border border-black my-8 md:my-16"></div>
           )}
         </React.Fragment>
       ))}
+
+      </div>
     </main>
   );
 }
