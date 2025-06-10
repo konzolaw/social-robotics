@@ -117,28 +117,9 @@ export default function Footer() {
           transform: translateX(5px);
         }
 
-        .robot-image {
-          animation: float 3s ease-in-out infinite;
-          margin-top: -200px;
-        }
+   
 
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-10px);
-          }
-        }
 
-        @media (max-width: 768px) {
-          .robot-image {
-            margin-top: 0px;
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-          }
-        }
       `}</style>
     </footer>
   );

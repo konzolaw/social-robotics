@@ -26,3 +26,45 @@
     border-color: transparent;
   }
 }
+
+
+
+
+
+
+
+
+/* Floating Robot Effect */
+    .robot-image {
+        height: 400px;
+        width: 440px;
+        animation: float 3s ease-in-out infinite;
+        margin-top: -200px;
+    }
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .robot-image{
+            margin-top: 0px;
+        }
+        footer #footer-robot {
+            text-align: center;
+        }
+        footer #footer-robot-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        footer .flex-col.md\:flex-row {
+            flex-direction: column;
+            text-align: center;
+        }
+    }

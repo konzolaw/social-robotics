@@ -201,7 +201,7 @@ const Header = () => {
                 <Link
                   href={item.path}
                   className={`relative inline-block pb-1 text-lg transition-transform transform hover:-translate-y-1 ${
-                    pathname === item.path ? "text-red-500" : "text-white"
+                    pathname.replace(/\/$/, "") === item.path.replace(/\/$/, "") ? "text-red-500" : "text-white"
                   } after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-red-500 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300`}
                 >
                   {item.name}

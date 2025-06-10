@@ -35,9 +35,9 @@ export default function ResponsibleComputingPage() {
                 <p className="text-gray-600 text-justify leading-relaxed mb-6 tracking-wide">
                   {project.short_description}
                 </p>
-                {project.get_absolute_url && (
+                {project.title && (
                   <Link
-                    href={project.get_absolute_url}
+                    href={project.title}
                     className="text-blue-600 font-semibold hover:text-blue-800 transition-all duration-300"
                   >
                     Learn More »
@@ -83,9 +83,9 @@ export default function ResponsibleComputingPage() {
                     ? project.short_description
                     : "No description available."}
                 </p>
-                {project.get_absolute_url && (
+                {project.title && (
                   <Link
-                    href={project.get_absolute_url}
+                    href={project.title}
                     className="text-blue-600 font-semibold hover:text-blue-800 transition-all duration-300"
                   >
                     Learn More »
