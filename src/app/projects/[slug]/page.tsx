@@ -2,14 +2,15 @@ import { projects } from "@/constants/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-type Props = {
+// Use correct Next.js App Router typing
+interface ProjectDetailPageProps {
   params: {
     slug: string;
   };
-};
+}
 
-export default function ProjectDetailPage({ params }: Props) {
-  // Normalize slug: remove whitespace for matching
+export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
+  // Normalize slug for matching
   const slug = decodeURIComponent(params.slug.trim().toLowerCase());
   const project = projects.find(
     (p) => p.slug.trim().toLowerCase() === slug
