@@ -18,9 +18,9 @@ const Hero: React.FC = () => {
           <Image
             src="/img/image 19.png"
             alt="Robot"
-            width={600}
-            height={600}
-            className="mx-auto md:mx-0 w-full max-w-[400px] md:max-w-[600px] h-auto"
+            width={800}
+            height={800}
+            className="mx-auto md:mx-0 w-full max-w-[500px] md:max-w-[700px] h-auto"
             priority
           />
         </div>

@@ -103,7 +103,7 @@ export default function AboutPage() {
       <div className="mb-16 flex flex-col gap-5 px-4 md:px-8 lg:px-16 xl:px-40 md:flex-row items-center justify-center bg-[#ECEDF2] py-8">
         <div className="md:pr-0 mb-8 md:mb-0 w-full md:w-1/2">
           <Image
-            src="/img/about-image.png"
+            src="/img/about/about-image.png"
             alt="Teaching Methodology"
             width={500}
             height={400}
