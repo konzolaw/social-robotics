@@ -13,56 +13,60 @@ export default function ResponsibleComputingPage() {
     <Banner title="Responsible Computing" />
     <div className="w-full py-10 px-4">
       {/* RCC Projects Section */}
-      <section>
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">RCC Projects</h2>
-        <hr className="border-t-4 border-red-700 w-full mx-auto mb-8" />
+<section>
+  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">RCC Projects</h2>
+  <hr className="border-t-4 border-red-700 w-full mx-auto mb-8" />
 
-        {rccProjects.map((project, idx) => (
+  {rccProjects.map((project, idx) => (
+    <div
+      key={idx}
+      className="bg-white rounded-lg shadow-lg p-6 mb-12 hover:shadow-xl transition-all duration-300 ease-in-out"
+    >
+      <div
+        className={`flex flex-col md:flex-row ${
+          idx % 2 === 1 ? "md:flex-row-reverse" : ""
+        } items-center md:items-start gap-6`}
+      >
+        {/* Content */}
+        <div className="flex-grow w-full md:w-1/2 text-left">
+          <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 hover:text-red-800 transition-colors duration-300">
+            {project.title}
+          </h3>
+
           <div
-            key={idx}
-            className="bg-white rounded-lg shadow-lg p-6 mb-8 hover:shadow-xl transition-all duration-300 ease-in-out"
-          >
-            <div
-              className={`flex flex-col md:flex-row ${
-                idx % 2 === 1 ? "md:flex-row-reverse" : ""
-              } items-center md:items-start gap-6`}
-            >
-              {/* Content */}
-              <div className="flex-grow w-full md:w-1/2 text-left">
-                <h3 className="text-xl md:text-2xl font-bold text-red-700 mb-4 hover:text-red-800 transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 text-justify leading-relaxed mb-6 tracking-wide">
-                  {project.short_description}
-                </p>
-                {project.title && (
-                  <Link
-                    href={project.title}
-                    className="text-blue-600 font-semibold hover:text-blue-800 transition-all duration-300"
-                  >
-                    Learn More »
-                  </Link>
-                )}
-              </div>
+            className="text-gray-600 text-justify leading-relaxed mb-6 tracking-wide space-y-4"
+            dangerouslySetInnerHTML={{ __html: project.short_description }}
+          />
 
-              {/* Image */}
-              <div className="w-full md:w-1/2">
-                <Image
-                  src={project.cover_image}
-                  alt={project.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-auto md:h-[250px] object-cover rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
-                />
-              </div>
-            </div>
-          </div>
-        ))}
-      </section>
+          {project.title && (
+            <Link
+              href={project.title}
+              className="text-blue-600 font-semibold hover:text-blue-800 transition-all duration-300"
+            >
+              Learn More »
+            </Link>
+          )}
+        </div>
+
+        {/* Image */}
+        <div className="w-full md:w-1/2">
+          <Image
+            src={project.cover_image}
+            alt={project.title}
+            width={600}
+            height={400}
+            className="w-full h-auto md:h-[400px] object-cover rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
+          />
+        </div>
+      </div>
+    </div>
+  ))}
+</section>
+
 
       {/* Student-Designed Projects Section */}
       <section className="projects-bg bg-gray-50 py-10">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
             STUDENTS&apos; DESIGNED PROJECTS
           </h2>
@@ -75,7 +79,7 @@ export default function ResponsibleComputingPage() {
             >
               {/* Text */}
               <div className="flex-grow w-full sm:w-2/3">
-                <h3 className="text-xl md:text-2xl font-bold text-red-700 mb-4 hover:text-red-800 transition-colors duration-300">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 hover:text-red-800 transition-colors duration-300">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 text-justify leading-relaxed mb-6 tracking-wide">
@@ -100,7 +104,7 @@ export default function ResponsibleComputingPage() {
                   alt={project.title}
                   width={600}
                   height={400}
-                  className="w-full h-auto sm:h-[250px] object-cover rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
+                  className="w-full h-auto sm:h-[400px] object-cover rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
                 />
               </div>
             </div>

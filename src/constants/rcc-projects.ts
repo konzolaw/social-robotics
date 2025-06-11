@@ -1,89 +1,25 @@
-export const rccProjects = [
-    {
-        "title": "Designing a Tourist Assistant Robot to Facilitate Tourism",
-        "description": "The prototype was designed to enhance tourists' interactions with locals and appreciation of Kenyan culture, language, and wildlife. The robot uses the speech recognition module of the NAO robot with scripted dialogues to introduce tourists to important cultural elements, narrate captivating Kenyan folk tales, and provide information about wildlife. It also conducts language practice sessions, immersing tourists in the local language and culture. In designing and developing this prototype, the students considered three responsible computing principles: inclusivity and accessibility, cultural and social sensitivity, and societal impact. To mitigate cultural bias, they incorporated a wide range of cultural perspectives and stories from Kenya, and addressed pronunciation variation to ensure the robot could understand local accents. The robot was designed with transparent functionalities and user-friendly interactions following cultural norms to build trust and user acceptance. Additionally, the students positioned the robot as a supportive tool to enhance human experience rather than replace human workers in the tourism industry, considering the societal impact of the robot technology.",
-        "short_description": "The prototype was designed to enhance tourists' interactions with locals and appreciation of Kenyan culture, language, and wildlife. The robot uses the speech recognition module of the NAO robot with scripted dialogues to introduce tourists to important cultural elements, narrate captivating Kenyan folk tales, and provide information about wildlife. It also conducts language practice sessions, immersing tourists in the local language and culture. In designing and developing this prototype, the students considered three responsible computing principles: inclusivity and accessibility, cultural and social sensitivity, and societal impact.",
-        "cover_image": "/img/projects/tourist-assistant.png",
-        "category": "R",
-        "team": [
-            {
-                "first_name": "Ian",
-                "last_name": "Peter"
-            },
-            {
-                "first_name": "Sam Kelvin",
-                "last_name": "Munyithya"
-            },
-            {
-                "first_name": "Owino",
-                "last_name": "Philemon"
-            },
-            {
-                "first_name": "Brian",
-                "last_name": "Mwangi"
-            }
-        ]
+
+ export const rccProjects = [{
+        "title": "Teaching Responsible Computing (RC) Through Designing Robotics Applications to Kenyan Computer Science Students",
+        "description": "<p>JKUAT received a 2023 Responsible Computing Challenge (RCC) award from the Mozilla Foundation to train and embed ethical considerations into the development of robotics.</p>\n\n<p> <a href='https://foundation.mozilla.org/en/blog/announcing-kenyas-inaugural-cohort-of-responsible-computing-challenge-awardees/' target='_blank' class='text-blue-600 hover:underline'><strong>RCC Computing Challenge Award</strong></a></p>\n\n<p>This project focuses on teaching responsible computing through designing robot applications. The goal is to provide students with practical experiences where they collaboratively apply their responsible computing knowledge and ethical awareness to design and develop responsible robotic applications. Through this initiative, we have developed a model syllabus for a human-computer interaction course that integrates design and responsible computing. The User Interface Architecture syllabus was adopted for BSc Computer Science and Computer Technology courses, and the RCC project led to the mainstreaming of responsible computing (RC) in final-year projects by revising guidelines to include RC and ethics. The project trained 112 students, involved 13 stakeholders, and developed 27 robot prototypes, with plans to sustain RCC through eLearning content and further integration of RC into student projects and departmental innovations. This project is led by Dr Eunice Njeri, lecturer in the Department of Computing, and Prof. Stephen Kimani, associate professor of Human-Computer interaction in the Department of Computing with the support of four MSc software engineering students - Peter Kabunyi, Caroline Katumbi, Paul Ndemo, and Eric Otieno.</p>\n\n<p><a href='https://youtu.be/0Poy3Iavmeg' target='_blank' class='text-blue-600 hover:underline'>Click here to know more about this project</a></p>\n\n<strong>The JKUAT RCC Project is funded by the Mozilla Foundation and USAID. </strong>",       "short_description": "<p>JKUAT received a 2023 Responsible Computing Challenge (RCC) award from the Mozilla Foundation to train and embed ethical considerations into the development of robotics.</p>\n\n<p> <a href='https://foundation.mozilla.org/en/blog/announcing-kenyas-inaugural-cohort-of-responsible-computing-challenge-awardees/' target='_blank' class='text-blue-600 hover:underline'><strong>RCC Computing Challenge Award</strong></a></p>\n\n<p>This project focuses on teaching responsible computing through designing robot applications.  ",
+        "cover_image": "/img/projects/teaching-rc.png",
+        "category": "P"
+   
     },
     {
-        "title": "Designing a Robotic Assistant Secretary for Institutions",
-        "description": "The robotic campus secretary assistant was designed for administrative use on campus. The robot can be positioned at the entrance of the office, to answer frequently asked questions( e.g., about exam dates, labs, games, and upcoming events like career talks and hackathons). It uses face recognition and speech recognition modules of the NAO  robot. In designing this application , the student considered a number of responsible computing principles including inclusivity and accessibility , privacy, and empathy to design for inclusivity and accessibility, the students reduced the speech recognition confidence threshold to accommodate non-native English speakers and also included an option to adjust the robot volume for individuals with hearing challenges. For privacy, the robot  was designed to verbalize that the feedback collected will be used to improve student-admin interaction and will be kept anonymous.  To design empathetic interactions with the robot secretary and address social anxiety, the robot speech was designed to use a friendly and approachable tone. Through these collaborative design projects, students developed knowledge and understanding of key responsible computing principles.",
-        "short_description": "The robotic campus secretary assistant was designed for administrative use on campus. The robot can be positioned at the entrance of the office, to answer frequently asked questions( e.g., about exam dates, labs, games, and upcoming events like career talks and hackathons).  It uses face recognition and speech recognition modules of the NAO  robot. In designing this application , the student considered a number of responsible computing principles including inclusivity and accessibility , privacy, and empathy to design for inclusivity and accessibility, the students reduced the speech recognition confidence threshold to accommodate non-native English speakers and also included an option to adjust the robot volume for individuals with hearing challenges. ",
-        "cover_image": "/img/projects/secretary-assistant.png",
-        "category": "R",
-        "team": [
-            {
-                "first_name": "Stephani",
-                "last_name": "Mukami"
-            },
-            {
-                "first_name": "George",
-                "last_name": "Thuo"
-            },
-            {
-                "first_name": "Ian",
-                "last_name": "Sawala"
-            },
-            {
-                "first_name": "Rose",
-                "last_name": "Kimu"
-            },
-            {
-                "first_name": "Felix",
-                "last_name": "Masese"
-            }
-        ]
+        "title": "Mainstreaming Responsible Computing (RC) in ICT Student Innovations - with a Focus on Final Year ICT Student Projects",
+        "description": "The first part of this project aims to integrate responsible computing (RC) and ethics in the design process of final-year student ICT Innovations. The second part involves integrating RC and ethics in the assessment criteria and supervision of final-year student projects. We have trained (n = 100) BSc. Computer Science and BSc. Computer Technology on responsible computing (RC) and ethics. We have also taught (n = ~ 15) faculty and (n = 20) postgraduate students at the School of Computing and Information Technology  (SCIT) on RC and ethics. The project is led by Dr. Eunice Njeri and Prof. Stephen Kimani, Department of Computing with the support of MSc Software Engineering students - Peter Kabunyi, Caroline Katumbi, Paul Ndemo, and Eric Otieno.",
+        "short_description": "The first part of this project aims to integrate responsible computing (RC) and ethics in the design process of final-year student ICT Innovations. The second part involves integrating RC and ethics in the assessment criteria and supervision of final-year student projects. We have trained (n = 100) BSc. Computer Science and BSc. Computer Technology on responsible computing (RC) and ethics. We have also taught (n = ~ 15) faculty and (n = 20) postgraduate students at the School of Computing and Information Technology  (SCIT) on RC and ethics. The project is led by Dr. Eunice Njeri and Prof. Stephen Kimani, Department of Computing with the support of MSc Software Engineering students - Peter Kabunyi, Caroline Katumbi, Paul Ndemo, and Eric Otieno. ",
+        "cover_image": "/img/projects/mainstreaming-rc.png",
+        "category": "P"
+  
     },
     {
-        "title": "Designing a Robot Companion for Children to Connect them to their Caregivers",
-        "description": "This design project  focuses on development of fair and inclusive intelligent models. In this project, students designed and developed  a robot companion that uses facial recognition to detect children’s emotions and respond through appropriate songs depending on the emotion detected. It would also send a notification to the caregiver through email.  In designing this application,   the students considered inclusivity, data privacy, empathy, and societal impact. To ensure inclusivity, the robot's emotion detection model was trained on diverse datasets, ensuring representation across different demographics .",
-        "short_description": "This design project  focuses on development of fair and inclusive intelligent models. In this project, students designed and developed  a robot companion that uses facial recognition to detect children’s emotions and respond through appropriate songs depending on the emotion detected. It would also send a notification to the caregiver through email.  In designing this application,  the students considered inclusivity, data privacy, empathy, and societal impact.  ",
-        "cover_image": "/img/projects/care-givers2.png",
-        "category": "R",
-        "team": [
-            {
-                "first_name": "Elvis",
-                "surname": "Karanja",
-                "last_name": "Muiru"
-            },
-            {
-                "first_name": "Moses",
-                "last_name": "Ndungu"
-            },
-            {
-                "first_name": "Stephen",
-                "surname": "Kanyanjua",
-                "last_name": "Ndirangu"
-            },
-            {
-                "first_name": "Maurice",
-                "surname": "Njoroge",
-                "last_name": "Muiruri"
-            },
-            {
-                "first_name": "Alfred",
-                "surname": "Muinde",
-                "last_name": "Tuva"
-            }
-        ]
+        "title": "Design and Use a Responsible Computing Industry-led Final-year Project Framework.",
+        "description": "The project aims to examine past Final Year computing projects with the intention of building a responsible computing framework for future ICT projects, with input from industry stakeholders. This project aims to further integrate responsible computing into final-year ICT projects by developing an RC framework, training faculty, and guiding students in applying these principles. We will also engage stakeholders, expand the initiative to other programs, and develop a software tool to support the RC framework implementation.This project is led by Dr Eunice Njeri, lecturer in the Department of Computing, and Prof. Stephen Kimani, associate professor of Human-Computer interaction in the Department of Computing with the support of  Dr Isaac Oteyo and four MSc software engineering students - Peter Kabunyi, Caroline Katumbi, Paul Ndemo, and Eric Otieno.",
+        "short_description": "The project aims to examine past Final Year computing projects with the intention of building a responsible computing framework for future ICT projects, with input from industry stakeholders. This project aims to further integrate responsible computing into final-year ICT projects by developing an RC framework, training faculty, and guiding students in applying these principles. We will also engage stakeholders, expand the initiative to other programs, and develop a software tool to support the RC framework implementation. ",
+        "cover_image": "/img/projects/mainstreaming-rc.png",
+        "category": "P"
+  
     }
 ]
