@@ -7,11 +7,15 @@ import Image from "next/image";
 
 export default function ProjectDetailPage() {
   const params = useParams();
-  const slug = params?.slug ? decodeURIComponent(params.slug).toLowerCase().trim() : null;
 
-  if (!slug) return notFound();
+  // ✅ Ensure `slug` is always a string
+  const rawSlug = params?.slug;
+  const slug = Array.isArray(rawSlug) ? rawSlug[0] : rawSlug;
+  const cleanSlug = slug ? decodeURIComponent(slug).toLowerCase().trim() : null;
 
-  const project = projects.find((p) => p.slug.toLowerCase().trim() === slug);
+  if (!cleanSlug) return notFound();
+
+  const project = projects.find((p) => p.slug.toLowerCase().trim() === cleanSlug);
 
   if (!project) return notFound();
 

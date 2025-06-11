@@ -1,18 +1,21 @@
-import React from "react";
+"use client";
+
+import { useParams } from "next/navigation";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { people } from "@/constants/people";
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
+export default function PersonDetailPage() {
+  const params = useParams();
 
-export default async function PersonDetailPage({ params }: Props) {
-  // Await the params if needed (depending on Next.js runtime behavior)
-  const slug = (await params).slug;
-  const person = people.find(p => p.slug === slug);
+  // ✅ Ensure `slug` is always a string
+  const rawSlug = params?.slug;
+  const slug = Array.isArray(rawSlug) ? rawSlug[0] : rawSlug;
+  const cleanSlug = slug ? decodeURIComponent(slug).toLowerCase().trim() : null;
+
+  if (!cleanSlug) return notFound();
+
+  const person = people.find((p) => p.slug === cleanSlug);
 
   if (!person) return notFound();
 
