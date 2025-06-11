@@ -188,28 +188,29 @@ const Header = () => {
 
         {/* Navbar Links */}
         <div className="p-2 relative">
-          <ul
-            className={`${
-              isMobileMenuOpen
-                ? "flex flex-col items-center gap-4"
-                : "hidden"
-            } md:flex md:items-center md:justify-center gap-6 md:gap-12 text-white duration-300 absolute top-0 left-0 right-0 bg-customLintingGreenDark md:relative md:bg-transparent z-10`}
-            onClick={(e) => e.stopPropagation()}
-          >
-            {navItems.map((item) => (
-              <li key={item.path}>
-                <Link
-                  href={item.path}
-                  className={`relative inline-block pb-1 text-lg transition-transform transform hover:-translate-y-1 ${
-                    pathname.replace(/\/$/, "") === item.path.replace(/\/$/, "") ? "text-red-500" : "text-white"
-                  } after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-red-500 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul
+          className={`${
+            isMobileMenuOpen
+              ? "flex flex-col items-start gap-4 px-4" // Left-aligned on mobile
+              : "hidden"
+          } md:flex md:items-center md:justify-center gap-6 md:gap-12 text-white duration-300 absolute top-0 left-0 right-0 bg-customLintingGreenDark md:relative md:bg-transparent z-10`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {navItems.map((item) => (
+            <li key={item.path}>
+              <Link
+                href={item.path}
+                className={`relative inline-block pb-1 text-lg transition-transform transform hover:-translate-y-1 ${
+                  pathname.replace(/\/$/, "") === item.path.replace(/\/$/, "") ? "text-red-500" : "text-white"
+                } after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-red-500 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300`}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       </nav>
     </header>
   );

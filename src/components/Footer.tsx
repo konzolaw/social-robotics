@@ -26,7 +26,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 lg:px-0">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0 lg:space-x-20">
           {/* Contact Info */}
-          <div>
+          <div className="text-left w-full md:w-auto">
             <h3 className="text-xl font-bold mb-2">Reach out to us</h3>
             <div>
               Social Robotics Lab
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div>
+          <div className="text-left w-full md:w-auto">
             <h3 className="text-xl font-bold mb-2">Links</h3>
             <ul className="space-y-2 md:space-y-3">
               <li><Link href="/about" className="target-link">About</Link></li>
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
 
           {/* Robot Image */}
-          <div className="relative md:flex-1 text-center" id="footer-robot">
+          <div className="relative md:flex-1 text-left md:text-center" id="footer-robot">
             <Image
               src="/img/core/nao-sitted.png"
               alt="Robot"
@@ -116,10 +116,6 @@ export default function Footer() {
           color: #ffffff;
           transform: translateX(5px);
         }
-
-   
-
-
       `}</style>
     </footer>
   );

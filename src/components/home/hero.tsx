@@ -7,20 +7,19 @@ import Link from 'next/link';
 const Hero: React.FC = () => {
   return (
     <section
-      className="bg-customCyanBlue w-full h-[75vh] flex items-center"
+      className="bg-customCyanBlue w-full h-auto md:h-[75vh] flex items-center py-10 md:py-0"
       tabIndex={-1}
     >
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center w-full px-6 md:px-16">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16 gap-10 md:gap-0">
 
-
-        {/* Image Section */}
-        <div className="w-full md:w-1/2 mb-8 md:mb-0 animate__animated animate__fadeInLeft animate__delay-1s">
+        {/* Image Section - comes first on mobile */}
+        <div className="w-full md:w-1/2 animate__animated animate__fadeInLeft animate__delay-1s">
           <Image
             src="/img/image 19.png"
             alt="Robot"
             width={900}
             height={900}
-            className="mx-auto md:mx-0 w-full max-w-[500px] md:max-w-[700px] h-auto"
+            className="mx-auto w-full max-w-[500px] md:max-w-[700px] h-auto"
             priority
           />
         </div>
@@ -43,7 +42,6 @@ const Hero: React.FC = () => {
             </Link>
           </div>
         </div>
-
       </div>
     </section>
   );
