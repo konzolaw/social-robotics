@@ -9,8 +9,10 @@ type Props = {
   };
 };
 
-export default function PersonDetailPage({ params }: Props) {
-  const person = people.find(p => p.slug === params.slug);
+export default async function PersonDetailPage({ params }: Props) {
+  // Await the params if needed (depending on Next.js runtime behavior)
+  const slug = (await params).slug;
+  const person = people.find(p => p.slug === slug);
 
   if (!person) return notFound();
 
@@ -90,7 +92,11 @@ export default function PersonDetailPage({ params }: Props) {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Research & Focus
           </h2>
-          {focus_title && <h3 className="text-xl font-semibold text-custom-red mb-2">{focus_title}</h3>}
+          {focus_title && (
+            <h3 className="text-xl font-semibold text-custom-red mb-2">
+              {focus_title}
+            </h3>
+          )}
           {focus_short && (
             <p className="text-gray-700 font-medium mb-2">{focus_short}</p>
           )}
