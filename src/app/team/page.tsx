@@ -82,8 +82,8 @@ export default function TeamPage() {
                 fill
                 sizes="(min-width: 768px) 256px, 192px"
                 style={{ objectFit: "cover" }}
-                priorit
-                  className="transition-transform duration-500 group-hover:scale-110"
+                priority
+                className="transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="flex flex-col gap-4 md:gap-5 w-full md:w-2/3">

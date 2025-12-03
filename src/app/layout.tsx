@@ -4,11 +4,8 @@ import './globals.css';
 import '@/styles/globals.css';
 import 'animate.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Social Robotics Lab – JKUAT',
@@ -43,7 +40,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className + ' bg-white text-gray-900'}>
+      <body className="font-sans bg-white text-gray-900">
         <Header />
          <main className="min-h-screen w-full px-0 pt-0">{children}</main>
 

@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
               <div className="absolute -top-4 -left-2 w-6 h-6 border-2 border-gray-900/60 rounded-full shadow-lg"></div>
               <div className="absolute -top-2 -right-4 w-4 h-4 bg-gray-900/50 rounded-full shadow-md"></div>
               
-              <h1 className="text-7xl md:text-5xl lg:text-9xl font-bold font-raleway leading-tight drop-shadow-lg">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold font-raleway leading-tight drop-shadow-lg">
                 <span className="text-white">Welcome to </span><span className="text-gray-900 drop-shadow-xl filter brightness-110 saturate-150">JKUAT</span>
               </h1>
               <h2 className="text-2xl md:text-4xl lg:text-6xl font-raleway font-bold tracking-wide relative">
